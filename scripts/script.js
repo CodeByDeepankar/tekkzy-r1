@@ -1,17 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
     
-    // Mobile Menu Toggle
     const hamburger = document.querySelector('.mobile-menu-btn');
     const navLinks = document.querySelector('.nav-links');
 
     if (hamburger) {
         hamburger.addEventListener('click', () => {
             navLinks.classList.toggle('active');
-            // Toggle icon or aria-expanded state if needed
         });
     }
 
-    // Close mobile menu when a link is clicked
     const links = document.querySelectorAll('.nav-links a');
     links.forEach(link => {
         link.addEventListener('click', () => {
@@ -21,7 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -34,7 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Form Submission Handler (simulated)
     const contactForm = document.querySelector('.contact-form form');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
@@ -45,7 +40,6 @@ document.addEventListener('DOMContentLoaded', function() {
             submitBtn.innerText = 'Sending...';
             submitBtn.disabled = true;
             
-            // Simulate network request
             setTimeout(() => {
                 alert('Thank you for contacting Tekkzy! We have received your message and will get back to you shortly.');
                 this.reset();
