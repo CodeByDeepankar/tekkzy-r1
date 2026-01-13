@@ -27,13 +27,15 @@ The website is designed to be professional, clean, and visually engaging, reflec
 ## 📂 Project Structure
 
 ```
-/
-├── index.html      # Homepage (Hero, visual summary)
-├── about.html      # Company profile, mission, and legal info
-├── services.html   # Detailed breakdown of 4 core service areas
-├── contact.html    # Contact form and address details
-├── style.css       # Global styles, variables, and media queries
-├── script.js       # Mobile menu toggle and interaction logic
+📂htmls/
+    ├── index.html      # Homepage (Hero, visual summary)
+    ├── about.html      # Company profile, mission, and legal info
+    ├── services.html   # Detailed breakdown of 4 core service areas
+    ├── contact.html    # Contact form and address details
+📂styles/
+    ├── style.css       # Global styles, variables, and media queries
+📂scripts/
+    ├── script.js       # Mobile menu toggle and interaction logic
 └── README.md       # Project documentation
 ```
 
